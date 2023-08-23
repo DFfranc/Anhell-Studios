@@ -1,4 +1,5 @@
 const boton = document.querySelector('.boton-menu');
+const enlaces = document.querySelectorAll('.menu__enlace');
 
 function mostrar_ocultar_menu() {
     const menu = document.querySelector('.menu');
@@ -25,3 +26,9 @@ function desbloquearScroll(){
 }
 
 boton.onclick = mostrar_ocultar_menu;
+enlaces.forEach(enlace => {
+    enlace.addEventListener('click', () => {
+        mostrar_ocultar_menu();
+        desbloquearScroll();
+    })
+})

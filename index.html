@@ -6,311 +6,548 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anhell Studios</title>
-    <link rel="stylesheet" href="src/css/normalize.css">
-    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500&family=Yanone+Kaffeesatz:wght@200;300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
 </head>
 
 <body>
     <header>
-        <picture class="logo">
-            <source srcset="logo.avif" type="image/avif">
-            <source srcset="logo.webp" type="image/webp">
-            <img loadig="lazy" src="logo.png" alt="Logo de Anhell Studios">
-        </picture>
+        <div class="contenedor-logo">
+            <a href="#inicio">
+                <picture>
+                    <source srcset="/build/img/design/logo.avif" type="image/avif">
+                    <source srcset="/build/img/design/logo.webp" type="image/webp">
+                    <img loading="lazy" class="logo" src="/build/img/design/logo.png" alt="Logo de Anhell Studios">
+                </picture>
+            </a>
+        </div>
 
         <div class="boton-menu">
             <i class="fa-solid fa-bars boton-menu__icon"></i>
         </div>
 
         <nav class="menu">
-            <a href="#" class="menu__enlace">Inicio</a>
-            <a href="#" class="menu__enlace">Sobre nosotros</a>
-            <a href="#" class="menu__enlace">Beneficios</a>
-            <a href="#" class="menu__enlace">Requisitos</a>
-            <a href="#" class="menu__enlace">Instalaciones</a>
-            <a href="#" class="menu__enlace">Preguntas frecuentes</a>
-            <a href="#" class="menu__enlace">Contacto</a>
+            <a href="#inicio" class="menu__enlace">Inicio</a>
+            <a href="#nosotros" class="menu__enlace">Nosotros</a>
+            <a href="#beneficios" class="menu__enlace">Beneficios</a>
+            <a href="#requisitos" class="menu__enlace">Requisitos</a>
+            <a href="#instalaciones" class="menu__enlace">Instalaciones</a>
+            <a href="#preguntas-frecuentes" class="menu__enlace">FAQ</a>
+            <a href="#contacto" class="menu__enlace">Contacto</a>
         </nav>
     </header>
 
-    <section>
-        <h1>Anhell Studios</h1>
-        <p>Explora Tu Potencial: Conviértete en una Estrella en Anhell Studios</p>
-        <p>Estudio Webcam en Ibagué</p>
+    <section id="inicio" class="hero">
+        <div class="contenedor hero__contenido">
+            <h1 class="hero__titulo">Anhell Studios</h1>
+            <p class="hero__msg"><span>¡Explora Tu Potencial!</span> Conviértete en una Estrella en Anhell Studios</p>
+            <p class="hero__ubicacion"><i class="fa-solid fa-location-dot"></i>Estudio Webcam en Ibagué</p>
+        </div>
     </section>
 
     <main>
-        <section>
-            <h2>Comienza tu historia con nosotros</h2>
-            <p>
-                ¡Bienvenido a nuestro vibrante mundo en línea donde las estrellas cobran vida! En nuestro estudio webcam,
-                nos enorgullece brindar una plataforma emocionante y en constante crecimiento para que artistas y modelos
-                talentosos puedan expresarse, conectarse y prosperar. Somos mucho más que un simple estudio; somos una
-                comunidad unida que valora la creatividad, la individualidad y la autenticidad. Si eres apasionado por
-                cautivar audiencias en vivo, tienes un espíritu audaz y deseas convertir tu carisma en ingresos
-                emocionantes, te invitamos a formar parte de nuestro equipo estelar. Ofrecemos flexibilidad de horarios,
-                oportunidades de desarrollo personal y el apoyo constante de una comunidad que te respaldará en cada
-                paso del camino. Descubre cómo tu talento puede brillar en el escenario digital y sé parte de una experiencia
-                emocionante que va más allá de los límites convencionales. Únete a nosotros y desencadena tu potencial
-                ilimitado en el mundo fascinante del entretenimiento en línea.
-            </p>
+        <section id="nosotros" class="nosotros mtop-3 ptop-3">
+            <div class="contenedor nosotros__grid">
+                <div>
+                    <picture>
+                        <source srcset="/build/img/design/nosotros.avif" type="image/avif">
+                        <source srcset="/build/img/design/nosotros.webp" type="image/webp">
+                        <img loading="lazy" class="nosotros__imagen" src="/build/img/design/nosotros.jpg" alt="nosotros de Anhell Studios">
+                    </picture>
+                </div>
+
+                <div class="nosotros__contenido">
+                    <h2 class="nosotros__titulo">Comienza tu Camino con Nosotros</h2>
+                    <p class="nosotros__texto">
+                        Somos un <em>estudio WebCam</em> con mayor proyección en la ciudad de Ibagué donde nos resaltamos por
+                        nuestro compromiso, innovación, creatividad y enfoque humano. Proporcionamos un sólido respaldo a través de
+                        <em>asesoría y capacitación</em>, equipando a nuestros modelos con las herramientas necesarias para
+                        alcanzar el <em>éxito financiero</em>. Nuestras metodologías se centran en reforzar tanto el crecimiento personal
+                        como las habilidades laborales de todas las personas que quieran incursionar en esta industria.
+                    </p>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h2>Beneficios Exclusivos para Nuestros Modelos</h2>
-            <ul>
-                <li>
-                    <i class="fa-solid fa-business-time"></i>
-                    <h3>Flexibilidad de horarios</h3>
-                    <p>Trabaja según tu propia agenda y compromisos personales.</p>
-                </li>
-                <li>
-                    <i class="fa-solid fa-money-bill-wave"></i>
-                    <h3>Ingresos potenciales</h3>
-                    <p>Oportunidad de generar ingresos significativos basados en tu desempeño.</p>
-                </li>
-                <li>
-                    <i class="fa-solid fa-star"></i>
-                    <h3>Ambiente Creativo</h3>
-                    <p>Un espacio en línea para expresar tu creatividad y talento.</p>
-                </li>
-                <li>
-                    <i class="fa-solid fa-hand-point-up"></i>
-                    <i class="fa-solid fa-hand-sparkles"></i>
-                    <i class="fa-solid fa-face-laugh-beam"></i>
-                    <i class="fa-solid fa-rocket"></i>
-                    <h3>Apoyo y Formación</h3>
-                    <p>Capacitación y orientación para mejorar tus habilidades y maximizar tu éxito.</p>
-                </li>
-                <li>
-                    <i class="fa-solid fa-shield"></i>
-                    <h3>Confidencialidad y Seguridad</h3>
-                    <p>Garantizamos un entorno seguro y protegido para tu trabajo.</p>
-                </li>
-                <li>
-                    <i class="fa-solid fa-people-group"></i>
-                    <h3>Diversidad e Igualdad</h3>
-                    <p>Celebramos la individualidad y damos la bienvenida a personas de todas las identidades de género.</p>
-                </li>
-            </ul>
+        <section id="beneficios" class="beneficios contenedor mtop-3 ptop-3">
+            <h2 class="beneficios__titulo">Beneficios Exclusivos para Nuestros Modelos</h2>
+
+            <div class="swiper swiper-beneficios">
+                <ul class="swiper-wrapper swiper-beneficios__wrapper">
+                    <li class="swiper-slide swiper-beneficios__slide beneficio">
+                        <div class="contenedor-icono">
+                            <i class="fa-solid fa-money-bill-wave"></i>
+                        </div>
+
+                        <div class="beneficio__contenedor-texto">
+                            <h3 class="beneficio__titulo">Ingresos Potenciales</h3>
+                            <p class="beneficio__descripcion">
+                                Te brindamos ventajas adicionales en tu remuneración, junto con bonificaciones
+                                exclusivas
+                                que contribuirán a aumentar tus ganancias.
+                            </p>
+                        </div>
+                    </li> <!-- .swiper-slide .beneficio -->
+
+                    <li class="swiper-slide swiper-beneficios__slide beneficio">
+                        <div class="contenedor-icono">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <div class="beneficio__contenedor-texto">
+                            <h3 class="beneficio__titulo">Entorno Confiable</h3>
+                            <p class="beneficio__descripcion">
+                                Tenemos enfoque humano, arraigado en el respeto y la
+                                promoción de la libre expresión, creando un entorno en el que experimentarás serenidad y
+                                confianza.
+                            </p>
+                        </div>
+                    </li> <!-- .swiper-slide .beneficio -->
+
+                    <li class="swiper-slide swiper-beneficios__slide beneficio">
+                        <div class="contenedor-icono">
+                            <i class="fa-solid fa-shield"></i>
+                        </div>
+
+                        <div class="beneficio__contenedor-texto">
+                            <h3 class="beneficio__titulo">Seguridad</h3>
+                            <p class="beneficio__descripcion">
+                                Nuestra dedicación se centra en garantizar la seguridad de tus
+                                datos personales y la confidencialidad de la información, en línea con los estándares
+                                ISO 27002.
+                            </p>
+                        </div>
+                    </li> <!-- .swiper-slide .beneficio -->
+
+                    <li class="swiper-slide swiper-beneficios__slide beneficio">
+                        <div class="contenedor-icono">
+                            <i class="fa-solid fa-people-group"></i>
+                        </div>
+
+                        <div class="beneficio__contenedor-texto">
+                            <h3 class="beneficio__titulo">Equipo Altamente Capacitado</h3>
+                            <p class="beneficio__descripcion">
+                                Nuestro equipo te respaldará en lograr un crecimiento óptimo en el menor lapso posible.
+                            </p>
+                        </div>
+                    </li> <!-- .swiper-slide .beneficio -->
+
+                    <li class="swiper-slide swiper-beneficios__slide beneficio">
+                        <div class="contenedor-icono">
+                            <i class="fa-regular fa-credit-card"></i>
+                        </div>
+
+                        <div class="beneficio__contenedor-texto">
+                            <h3 class="beneficio__titulo">Pagos Puntuales y Convenientes</h3>
+                            <p class="beneficio__descripcion">
+                                Nuestra principal prioridad es asegurar pagos puntuales. Por esta
+                                razón, efectuamos los pagos el día 5 y 20 de cada mes, directamente en tu cuenta
+                                bancaria de
+                                Bancolombia.
+                            </p>
+                        </div>
+                    </li> <!-- .swiper-slide .beneficio -->
+
+                    <li class="swiper-slide swiper-beneficios__slide beneficio">
+                        <div class="contenedor-icono">
+                            <i class="fa-solid fa-hand-sparkles"></i>
+                        </div>
+
+                        <div class="beneficio__contenedor-texto">
+                            <h3 class="beneficio__titulo">Apoyo Estratégico y Constante</h3>
+                            <p class="beneficio__descripcion">
+                                Te ofrecemos apoyo en todo momento, tanto en las transmisiones como fuera de ellas,
+                                asegurando que alcances los resultados más destacados.
+                            </p>
+                        </div>
+                    </li> <!-- .swiper-slide .beneficio -->
+
+                    <li class="swiper-slide swiper-beneficios__slide beneficio">
+                        <div class="contenedor-icono">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+
+                        <div class="beneficio__contenedor-texto">
+                            <h3 class="beneficio__titulo">Catálogo de Juguetes y Descuentos Exclusivos</h3>
+                            <p class="beneficio__descripcion">
+                                Disponemos de una tienda en línea con un extenso catálogo de juguetes sexuales y
+                                lencería erótica, con descuentos de hasta un 50% para nuestros modelos.
+                            </p>
+                        </div>
+                    </li> <!-- .swiper-slide .beneficio -->
+                </ul> <!-- .swiper-wrapper -->
+
+                <!-- Swiper-beneficios pagination -->
+                <div class="swiper-pagination swiper-beneficios__pagination"></div>
+
+            </div> <!-- .swiper .swiper-beneficios-->
         </section>
 
-        <section>
-            <h2>¿Estás Listo para Unirte? Requisitos Aquí</h2>
-            <ul>
-                <li>
-                    Edad Mínima: Debes tener al menos 18 años para aplicar y trabajar con nosotros.
-                </li>
-                <li>
-                    Actitud profesional: Mantener una actitud profesional y respetuosa en todo momento durante las
-                    transmisiones.
-                </li>
-                <li>
-                    Confianza y Comodidad: Estar cómodo con la exposición en línea y dispuesto/a a interactuar con
-                    audiencias adultas.
-                </li>
-                <li>
-                    Discreción Personal: Mantener tu trabajo en el estudio en privado y respetar la confidencialidad.
-                </li>
-                <li>
-                    Ambiente Adecuado: Asegurarte de tener un entorno de transmisión limpio, bien iluminado y libre de
-                    distracciones.
-                </li>
-                <li>
-                    Habilidad para Entretener: Tener habilidades de entretenimiento y comunicación para interactuar con
-                    la audiencia en vivo.
-                </li>
-                <li>
-                    Colaboración en Equipo: Trabajar de manera colaborativa con otros modelos y el equipo del estudio.
-                </li>
-                <li>
-                    Formación y Orientación: Participar en sesiones de formación y seguir las pautas proporcionadas por
-                    el estudio.
-                </li>
-            </ul>
+        <section id="requisitos" class="fondo-requisitos requisitos mtop-3">
+            <div class="requisitos__grid">
+                <div class="contenedor requisitos__contenido">
+                    <h2 class="requisitos__titulo">¿Estás Listo para Unirte? Requisitos Aquí</h2>
+    
+                    <ul class="lista-requisitos">
+                        <li class="lista-requisitos__item">
+                            <p>
+                                <span>Edad Mínima:</span>
+                                Debes tener al menos 18 años para aplicar y trabajar con nosotros.
+                            </p>
+                        </li>
+    
+                        <li class="lista-requisitos__item">
+                            <p>
+                                <span>Actitud profesional:</span>
+                                Mantener una actitud profesional y respetuosa en todo momento durante las
+                                transmisiones.
+                            </p>
+                        </li>
+                        <li class="lista-requisitos__item">
+                            <p>
+                                <span>Confianza y Comodidad:</span>
+                                Estar cómodo con la exposición en línea y dispuesto/a a interactuar con
+                                audiencias adultas.
+                            </p>
+                        </li>
+                        <li class="lista-requisitos__item">
+                            <p>
+                                <span>Discreción Personal:</span>
+                                Mantener tu trabajo en el estudio en privado y respetar la confidencialidad.
+                            </p>
+                        </li>
+                        <li class="lista-requisitos__item">
+                            <p>
+                                <span>Ambiente Adecuado:</span>
+                                Asegurarte de tener un entorno de transmisión limpio, bien iluminado y libre de
+                                distracciones.
+                            </p>
+                        </li>
+                        <li class="lista-requisitos__item">
+                            <p>
+                                <span>Habilidad para Entretener:</span>
+                                Tener habilidades de entretenimiento y comunicación para interactuar con
+                                la audiencia en vivo.
+                            </p>
+                        </li>
+                        <li class="lista-requisitos__item">
+                            <p>
+                                <span>Colaboración en Equipo:</span>
+                                Trabajar de manera colaborativa con otros modelos y el equipo del estudio.
+                            </p>
+                        </li>
+                        <li class="lista-requisitos__item">
+                            <p>
+                                <span>Formación y Orientación:</span>
+                                Participar en sesiones de formación y seguir las pautas proporcionadas por
+                                el estudio.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div> <!-- .requisitos-grid -->
+        </section> <!-- .fondo-requisitos .requisitos -->
+
+        <section id="instalaciones" class="instalaciones contenedor mtop-3 ptop-3">
+            <h2 class="instalaciones__titulo">Descubre Nuestro Espacio Creativo</h2>
+
+            <!-- Cambiar los <img> por <picture> cuando estén las imagenes finales -->
+
+            <div class="swiper swiper-instalaciones">
+                <ul class="swiper-wrapper swiper-instalaciones__wrapper">
+                    <li class="swiper-slide swiper-instalaciones__slide">
+                        <img src="build/img/instalaciones/espacio-1.jpg"
+                            alt="Imagen ilustrativa del espacio de trabajo de anhell studios">
+                    </li>
+
+                    <li class="swiper-slide swiper-instalaciones__slide">
+                        <img src="build/img/instalaciones/espacio-2.jpg"
+                            alt="Imagen ilustrativa del espacio de trabajo de anhell studios">
+                    </li>
+
+                    <li class="swiper-slide swiper-instalaciones__slide">
+                        <img src="build/img/instalaciones/espacio-3.jpg"
+                            alt="Imagen ilustrativa del espacio de trabajo de anhell studios">
+                    </li>
+
+                    <li class="swiper-slide swiper-instalaciones__slide">
+                        <img src="build/img/instalaciones/espacio-4.jpg"
+                            alt="Imagen ilustrativa del espacio de trabajo de anhell studios">
+                    </li>
+
+                    <li class="swiper-slide swiper-instalaciones__slide">
+                        <img src="build/img/instalaciones/espacio-5.jpg"
+                            alt="Imagen ilustrativa del espacio de trabajo de anhell studios">
+                    </li>
+
+                    <li class="swiper-slide swiper-instalaciones__slide">
+                        <img src="build/img/instalaciones/espacio-6.jpg"
+                            alt="Imagen ilustrativa del espacio de trabajo de anhell studios">
+                    </li>
+
+                    <li class="swiper-slide swiper-instalaciones__slide">
+                        <img src="build/img/instalaciones/espacio-7.jpg"
+                            alt="Imagen ilustrativa del espacio de trabajo de anhell studios">
+                    </li>
+
+                    <li class="swiper-slide swiper-instalaciones__slide">
+                        <img src="build/img/instalaciones/espacio-8.jpg"
+                            alt="Imagen ilustrativa del espacio de trabajo de anhell studios">
+                    </li>
+
+                    <li class="swiper-slide swiper-instalaciones__slide">
+                        <img src="build/img/instalaciones/espacio-9.jpg"
+                            alt="Imagen ilustrativa del espacio de trabajo de anhell studios">
+                    </li>
+
+                    <li class="swiper-slide swiper-instalaciones__slide">
+                        <img src="build/img/instalaciones/espacio-10.jpg"
+                            alt="Imagen ilustrativa del espacio de trabajo de anhell studios">
+                    </li>
+
+                    <li class="swiper-slide swiper-instalaciones__slide">
+                        <img src="build/img/instalaciones/espacio-11.jpg"
+                            alt="Imagen ilustrativa del espacio de trabajo de anhell studios">
+                    </li>
+
+                    <li class="swiper-slide swiper-instalaciones__slide">
+                        <img src="build/img/instalaciones/espacio-12.jpg"
+                            alt="Imagen ilustrativa del espacio de trabajo de anhell studios">
+                    </li>
+
+                    <li class="swiper-slide swiper-instalaciones__slide">
+                        <img src="build/img/instalaciones/espacio-13.jpg"
+                            alt="Imagen ilustrativa del espacio de trabajo de anhell studios">
+                    </li>
+
+                    <li class="swiper-slide swiper-instalaciones__slide">
+                        <img src="build/img/instalaciones/espacio-14.jpg"
+                            alt="Imagen ilustrativa del espacio de trabajo de anhell studios">
+                    </li>
+
+                    <li class="swiper-slide swiper-instalaciones__slide">
+                        <img src="build/img/instalaciones/espacio-15.jpg"
+                            alt="Imagen ilustrativa del espacio de trabajo de anhell studios">
+                    </li>
+                </ul> <!-- .swiper-wrapper -->
+
+                <!-- Swiper-instalaciones pagination -->
+                <div class="swiper-pagination swiper-instalaciones__pagination"></div>
+            </div> <!-- .swiper .swiper-instalaciones -->
+        </section> <!-- .instalaciones -->
+
+
+        <section id="preguntas-frecuentes" class="preguntas-frecuentes mtop-3 ptop-3">
+            <h2 class="preguntas-frecuentes__titulo">Preguntas Frecuentes</h2>
+
+            <ul class="accordion">
+                <li class="accordion__item">
+                    <div class="accordion__fondo-titulo">
+                        <div class="contenedor accordion__contenedor-titulo">
+                            <h3 class="accordion__titulo">
+                                ¿Qué es el modelaje WebCam?
+                            </h3>
+                            <i class="fa-solid fa-chevron-up accordion__icono"></i>
+                        </div>
+                    </div>
+
+                    <div class="contenedor accordion__contenedor-contenido">
+                        <p class="accordion__contenido">
+                            Es un trabajo como cualquier otro en la que un individuo se
+                            dedica a transmitir en vivo a través de una cámara en línea, llegando a diversos puntos
+                            alrededor del mundo. El modelaje webcam es más que un hobbie, es una verdadera vocación
+                            que se entrelaza con las artes escénicas. Su producto resultante es un monólogo en
+                            tiempo real, en el que la alta calidad estética se combina con la capacidad de sostener
+                            conversaciones agradables e interactuar con los usuarios.
+                        </p>
+                    </div>
+                </li> <!-- .accordion-item -->
+
+                <li class="accordion__item">
+                    <div class="accordion__fondo-titulo">
+                        <div class="contenedor accordion__contenedor-titulo">
+                            <h3 class="accordion__titulo">
+                                ¿Brindan capacitacion y asesoramiento?
+                            </h3>
+                            <i class="fa-solid fa-chevron-up accordion__icono"></i>
+                        </div>
+                    </div>
+
+                    <div class="contenedor accordion__contenedor-contenido">
+                        <p class="accordion__contenido">
+                            Por supuesto, disponemos de un equipo de apoyo conformado por profesionales altamente
+                            capacitados y especializados en la materia. Su experiencia les permite ofrecer orientación
+                            precisa, apoyo continuo, acompañamiento constante, valiosas recomendaciones, consejos y otros
+                            aspectos esenciales para optimizar tus transmisiones y presentaciones en vivo. Además, te
+                            brindamos planes de entrenamiento individualizados y en constante evolución.
+                        </p>
+                    </div>
+                </li> <!-- .accordion-item -->
+
+                <li class="accordion__item">
+                    <div class="accordion__fondo-titulo">
+                        <div class="contenedor accordion__contenedor-titulo">
+                            <h3 class="accordion__titulo">
+                                ¿Cuántas horas de trabajo diarias son necesarias para obtener ingresos rentables?
+                            </h3>
+                            <i class="fa-solid fa-chevron-up accordion__icono"></i>
+                        </div>
+                    </div>
+
+                    <div class="contenedor accordion__contenedor-contenido">
+                        <p class="accordion__contenido">
+                            Basados en nuestro conocimiento, hemos observado que dedicar al menos 6 horas continuas
+                            diarias es fundamental para alcanzar una rentabilidad excepcional.
+                        </p>
+                    </div>
+                </li> <!-- .accordion-item -->
+
+                <li class="accordion__item">
+                    <div class="accordion__fondo-titulo">
+                        <div class="contenedor accordion__contenedor-titulo">
+                            <h3 class="accordion__titulo">
+                                ¿Cada cuánto son los pagos?
+                            </h3>
+                            <i class="fa-solid fa-chevron-up accordion__icono"></i>
+                        </div>
+                    </div>
+
+                    <div class="contenedor accordion__contenedor-contenido">
+                        <p class="accordion__contenido">
+                            Los pagos se efectúan de manera quincenal los días 5 y 20 de cada mes.
+                        </p>
+                    </div>
+                </li> <!-- .accordion-item -->
+
+                <li class="accordion__item">
+                    <div class="accordion__fondo-titulo">
+                        <div class="contenedor accordion__contenedor-titulo">
+                            <h3 class="accordion__titulo">
+                                ¿Cuánto podría llegar a ganar?
+                            </h3>
+                            <i class="fa-solid fa-chevron-up accordion__icono"></i>
+                        </div>
+                    </div>
+
+                    <div class="contenedor accordion__contenedor-contenido">
+                        <p class="accordion__contenido">
+                            Siempre se debe tener constancia y disciplina en todo lo que realices. Junto a nosotros,
+                            tienes
+                            la posibilidad de generar ingresos que oscilan entre 1 y 5 millones de pesos cada quincena.
+                            Sin
+                            embargo, es importante destacar que, según la dedicación, metas trazadas y nivel de
+                            profesionalismo, se han alcanzado ganancias aún más substanciales.
+                        </p>
+                    </div>
+                </li> <!-- .accordion-item -->
+
+                <li class="accordion__item">
+                    <div class="accordion__fondo-titulo">
+                        <div class="contenedor accordion__contenedor-titulo">
+                            <h3 class="accordion__titulo">
+                                ¿Qué experiencia se requiere?
+                            </h3>
+                            <i class="fa-solid fa-chevron-up accordion__icono"></i>
+                        </div>
+                    </div>
+
+                    <div class="contenedor accordion__contenedor-contenido">
+                        <p class="accordion__contenido ">
+                            No se requiere experiencia previa, únicamente es necesario contar con actitud positiva,
+                            habilidades naturales, aspiraciones de crecimiento y una disciplina firme para
+                            convertirte en una modelo webcam exitosa.
+                        </p>
+                    </div>
+                </li> <!-- .accordion-item -->
+
+                <li class="accordion__item">
+                    <div class="accordion__fondo-titulo">
+                        <div class="contenedor accordion__contenedor-titulo">
+                            <h3 class="accordion__titulo">
+                                ¿Mi privacidad está segura?
+                            </h3>
+                            <i class="fa-solid fa-chevron-up accordion__icono"></i>
+                        </div>
+                    </div>
+
+                    <div class="contenedor accordion__contenedor-contenido">
+                        <p class="accordion__contenido">
+                            Sí, queremos asegurarte de que toda la información que compartas con nosotros se
+                            mantiene en estricta confidencialidad. Nos empeñamos en brindar un entorno seguro y
+                            protegido para todos nuestros modelos, garantizando su tranquilidad. Al momento de
+                            activar tu perfil como modelo webcam, te asignaremos un pseudónimo, esto es necesario
+                            para preservar tu identidad.
+                        </p>
+                    </div>
+                </li> <!-- .accordion-item -->
+            </ul> <!-- .accordion -->
         </section>
+
+        <div class="llamado-contacto-contenedor">
+            <div class="llamado-accion">
+                <div class="contenedor llamado-accion__contenido">
+                    <p class="llamado-accion__texto">
+                        Tu camino hacia el éxito comienza aquí.
+                        <span>¡Contáctanos Ahora Mismo!</span>
+                    </p>
+                </div>
+            </div>
+
+            <section id="contacto" class="contenedor datos-contacto ptop-3">
+                <h2>Datos de contacto</h2>
+                <ul class="datos-contacto__lista">
+                    <li class="datos-contacto__item">
+                        <div class="datos-contacto__contenedor-icono">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+
+                        <p>
+                            +57 322 883 2251
+                        </p>
+                    </li>
+
+                    <li class="datos-contacto__item">
+                        <div class="datos-contacto__contenedor-icono">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+
+                        <p>
+                            +57 322 883 2251
+                        </p>
+                    </li>
+            
+                    <li class="datos-contacto__item">
+                        <div class="datos-contacto__contenedor-icono">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+
+                        <p>
+                            <a href="mailto:anhellstudios1@gmail.com" class="enlace-email">anhellstudios1@gmail.com</a>
+                        </p>
+                    </li>
+                </ul>
+            </section>
+        </div>
     </main>
 
-    <section>
-        <h2>Descubre Nuestro Espacio Creativo</h2>
-
-        <!-- Cambiar los <img> por <picture> cuando estén las imagenes finales -->
-
-        <ul>
-            <li>
-                <img src="src/img/espacio-1.jpg" alt="Imagen ilustrativa del espacio de trabajo de anhell studios">
-            </li>
-            <li>
-                <img src="src/img/espacio-2.jpg" alt="Imagen ilustrativa del espacio de trabajo de anhell studios">
-            </li>
-            <li>
-                <img src="src/img/espacio-3.jpg" alt="Imagen ilustrativa del espacio de trabajo de anhell studios">
-            </li>
-            <li>
-                <img src="src/img/espacio-4.jpg" alt="Imagen ilustrativa del espacio de trabajo de anhell studios">
-            </li>
-            <li>
-                <img src="src/img/espacio-5.jpg" alt="Imagen ilustrativa del espacio de trabajo de anhell studios">
-            </li>
-            <li>
-                <img src="src/img/espacio-6.jpg" alt="Imagen ilustrativa del espacio de trabajo de anhell studios">
-            </li>
-            <li>
-                <img src="src/img/espacio-7.jpg" alt="Imagen ilustrativa del espacio de trabajo de anhell studios">
-            </li>
-            <li>
-                <img src="src/img/espacio-8.jpg" alt="Imagen ilustrativa del espacio de trabajo de anhell studios">
-            </li>
-            <li>
-                <img src="src/img/espacio-9.jpg" alt="Imagen ilustrativa del espacio de trabajo de anhell studios">
-            </li>
-            <li>
-                <img src="src/img/espacio-10.jpg" alt="Imagen ilustrativa del espacio de trabajo de anhell studios">
-            </li>
-            <li>
-                <img src="src/img/espacio-11.jpg" alt="Imagen ilustrativa del espacio de trabajo de anhell studios">
-            </li>
-            <li>
-                <img src="src/img/espacio-12.jpg" alt="Imagen ilustrativa del espacio de trabajo de anhell studios">
-            </li>
-            <li>
-                <img src="src/img/espacio-13.jpg" alt="Imagen ilustrativa del espacio de trabajo de anhell studios">
-            </li>
-            <li>
-                <img src="src/img/espacio-14.jpg" alt="Imagen ilustrativa del espacio de trabajo de anhell studios">
-            </li>
-            <li>
-                <img src="src/img/espacio-15.jpg" alt="Imagen ilustrativa del espacio de trabajo de anhell studios">
-            </li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Preguntas Frecuentes</h2>
-        <ul>
-            <li>
-                <h3>¿Qué es ser un@ modelo webcam?</h3>
-                <p>
-                    El papel de un modelo webcam abarca el entretenimiento adulto, donde se llevan a cabo diversas
-                    transmisiones, espectáculos dinámicos, temáticos y ocasionalmente de naturaleza íntima, a través de
-                    nuestro estudio.
-                </p>
-            </li>
-            <li>
-                <h3>¿En cuanto tiempo obtendré resultados?</h3>
-                <p>
-                    En el ámbito de la industria webcam, la situación es variable y se encuentra sujeta a múltiples
-                    factores. Tu compromiso, responsabilidad y desempeño personal como modelo influirán directamente en
-                    los resultados económicos que puedas lograr. Tu actitud frente a la cámara se convierte en un
-                    recurso fundamental para potenciar tus ganancias y alcanzar tus metas.
-                </p>
-            </li>
-            <li>
-                <h3>¿Mis datos personales serán confidenciales?</h3>
-                <p>
-                    La privacidad y confidencialidad de los datos personales de nuestras modelos son prioridades
-                    fundamentales dentro de nuestro estudio. En las plataformas en línea donde las modelos llevarán a
-                    cabo sus transmisiones, se utilizará un nombre de usuario (nick name) seleccionado a discreción,
-                    preservando así su identidad personal.
-                </p>
-            </li>
-            <li>
-                <h3>¿Quiénes pueden trabajar con nosotros?</h3>
-                <p>
-                    En nuestro estudio, creemos en la inclusión y en brindar oportunidades a todas las personas, sin
-                    importar su género o identidad. Extendemos una cálida bienvenida a hombres, mujeres, personas
-                    transgénero y cualquier otra identidad de género. Valoramos la diversidad y creemos que cada
-                    individuo tiene un lugar en nuestra comunidad.
-                </p>
-            </li>
-            <li>
-                <h3>¿Cuáles son los métodos de pago?</h3>
-                <p>
-                    Nuestros pagos se realizan de manera quincenal y se efectúan mediante depósitos directos a las
-                    cuentas bancarias de las modelos.
-                </p>
-            </li>
-        </ul>
-    </section>
-
-    <div>
-        <div>
-            <p>
-                Únete a nosotros y desata tu potencial en el emocionante mundo del entretenimiento en línea. Tu camino
-                hacia el éxito comienza aquí.
-                <span>¡Actúa ahora mismo!</span>
-            </p>
-        </div>
-
-        <div>
-            <h3>Datos de contacto</h3>
-            <ul>
-                <li>
-                    <i class="fa-solid fa-phone"></i>
-                    Tel: 310 247 9197
-                </li>
-                <li>
-                    <i class="fa-brands fa-whatsapp"></i>
-                    Tel: 318 497 1542
-                </li>
-                <li>
-                    <i class="fa-solid fa-envelope"></i>
-                    Email: <a href="mailto:anhellstudios@gmail.com">anhellstudios@gmail.com</a>
-                </li>
-                <li>
-                    <i class="fa-solid fa-location-dot"></i>
-                    Dirección: Cra 8 - Cll #20-24, Ibagué - Tolima
-                </li>
-            </ul>
-        </div>
-    </div>
-
     <footer>
-        <div>
-            <source srcset="logo.avif" type="image/avif">
-            <source srcset="logo.webp" type="image/webp">
-            <img loadig="lazy" src="logo.png" alt="Logo de Anhell Studios">
-        </div>
-
-        <div>
-            <h4>Explora</h4>
-
-            <nav>
-                <a href="#">Inicio</a>
-                <a href="#">Sobre nosotros</a>
-                <a href="#">Beneficios</a>
-                <a href="#">Requisitos</a>
-                <a href="#">Instalaciones</a>
-                <a href="#">Preguntas frecuentes</a>
-                <a href="#">Contacto</a>
-            </nav>
-        </div>
-
-        <div>
-            <h4>Síguenos</h4>
-
-            <ul>
-                <li>
-                    <i class="fa-brands fa-facebook"></i>
-                    <a href="#">Anhell Studios</a>
-                </li>
-                <li>
-                    <i class="fa-brands fa-instagram"></i>
-                    <a href="#">@Anhell_studios</a>
-                </li>
-                <li>
-                    <i class="fa-brands fa-twitter"></i>
-                    <a href="#">@Anhells</a>
-                </li>
-            </ul>
-        </div>
-
-        <div>
-            <p>&copy; <span id="currentYear"></span> Anhell Studios - Todos los derechos reservados </p>
+        <div class="contenedor copyright">
+            <p>
+                &copy; <span id="currentYear"></span>
+                Anhell Studios
+            </p>
+            <p>
+                <span class="guion-derechos-reservados">&nbsp;-</span>
+                Todos los derechos reservados
+            </p>
         </div>
     </footer>
 
-    <script src="src/js/app.js" type="module"></script>
+    <script src="build/js/main.min.js" type="module"></script>
     <script src="https://kit.fontawesome.com/69347d4d8c.js" crossorigin="anonymous"></script>
 </body>
 
