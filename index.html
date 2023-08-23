@@ -6,11 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anhell Studios</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500&family=Yanone+Kaffeesatz:wght@200;300;400;500&display=swap"
         rel="stylesheet">
+    
+    <link rel="preload" href="build/css/app.css" as="style">
     <link rel="stylesheet" href="build/css/app.css">
 </head>
 
@@ -44,8 +47,15 @@
     <section id="inicio" class="hero">
         <div class="contenedor hero__contenido">
             <h1 class="hero__titulo">Anhell Studios</h1>
-            <p class="hero__msg"><span>¡Explora Tu Potencial!</span> Conviértete en una Estrella en Anhell Studios</p>
-            <p class="hero__ubicacion"><i class="fa-solid fa-location-dot"></i>Estudio Webcam en Ibagué</p>
+            <p class="hero__msg"><span>¡Explota Tu Potencial!</span> Conviértete en una Estrella en Anhell Studios</p>
+            <a 
+                href="https://wa.me/+573228832251" 
+                class="hero__ubicacion"
+                target="_blank"
+            >
+                    <i class="fa-solid fa-location-dot"></i>
+                    Estudio Webcam en Ibagué
+            </a>
         </div>
     </section>
 
@@ -56,7 +66,7 @@
                     <picture>
                         <source srcset="/build/img/design/nosotros.avif" type="image/avif">
                         <source srcset="/build/img/design/nosotros.webp" type="image/webp">
-                        <img loading="lazy" class="nosotros__imagen" src="/build/img/design/nosotros.jpg" alt="nosotros de Anhell Studios">
+                        <img loading="lazy" class="nosotros__imagen" src="/build/img/design/nosotros.jpg" alt="Imagen ilustrativa de la sección sobre nosotros">
                     </picture>
                 </div>
 
@@ -69,8 +79,8 @@
                         alcanzar el <em>éxito financiero</em>. Nuestras metodologías se centran en reforzar tanto el crecimiento personal
                         como las habilidades laborales de todas las personas que quieran incursionar en esta industria.
                     </p>
-                </div>
-            </div>
+                </div> 
+            </div> <!-- .contenedor .nosotros__grid -->
         </section>
 
         <section id="beneficios" class="beneficios contenedor mtop-3 ptop-3">
@@ -181,11 +191,10 @@
                     </li> <!-- .swiper-slide .beneficio -->
                 </ul> <!-- .swiper-wrapper -->
 
-                <!-- Swiper-beneficios pagination -->
                 <div class="swiper-pagination swiper-beneficios__pagination"></div>
 
             </div> <!-- .swiper .swiper-beneficios-->
-        </section>
+        </section> <!-- .beneficios .contenedor -->
 
         <section id="requisitos" class="fondo-requisitos requisitos mtop-3">
             <div class="requisitos__grid">
@@ -207,6 +216,7 @@
                                 transmisiones.
                             </p>
                         </li>
+                        
                         <li class="lista-requisitos__item">
                             <p>
                                 <span>Confianza y Comodidad:</span>
@@ -214,12 +224,14 @@
                                 audiencias adultas.
                             </p>
                         </li>
+
                         <li class="lista-requisitos__item">
                             <p>
                                 <span>Discreción Personal:</span>
                                 Mantener tu trabajo en el estudio en privado y respetar la confidencialidad.
                             </p>
                         </li>
+
                         <li class="lista-requisitos__item">
                             <p>
                                 <span>Ambiente Adecuado:</span>
@@ -227,6 +239,7 @@
                                 distracciones.
                             </p>
                         </li>
+
                         <li class="lista-requisitos__item">
                             <p>
                                 <span>Habilidad para Entretener:</span>
@@ -234,12 +247,14 @@
                                 la audiencia en vivo.
                             </p>
                         </li>
+
                         <li class="lista-requisitos__item">
                             <p>
                                 <span>Colaboración en Equipo:</span>
                                 Trabajar de manera colaborativa con otros modelos y el equipo del estudio.
                             </p>
                         </li>
+
                         <li class="lista-requisitos__item">
                             <p>
                                 <span>Formación y Orientación:</span>
@@ -247,15 +262,16 @@
                                 el estudio.
                             </p>
                         </li>
-                    </ul>
-                </div>
-            </div> <!-- .requisitos-grid -->
+                    </ul> <!-- .lista-requisitos -->
+                </div> <!-- .contenedor .requisitos__contenido-->
+
+            </div> <!-- .requisitos__grid -->
         </section> <!-- .fondo-requisitos .requisitos -->
 
         <section id="instalaciones" class="instalaciones contenedor mtop-3 ptop-3">
             <h2 class="instalaciones__titulo">Descubre Nuestro Espacio Creativo</h2>
 
-            <!-- Cambiar los <img> por <picture> cuando estén las imagenes finales -->
+            <!-- Cambiar los <img> por <picture> y agregar loading="lazy" cuando estén las imagenes finales -->
 
             <div class="swiper swiper-instalaciones">
                 <ul class="swiper-wrapper swiper-instalaciones__wrapper">
@@ -333,10 +349,13 @@
                         <img src="build/img/instalaciones/espacio-15.jpg"
                             alt="Imagen ilustrativa del espacio de trabajo de anhell studios">
                     </li>
-                </ul> <!-- .swiper-wrapper -->
+                </ul> <!-- .swiper-wrapper .swiper-instalaciones__wrapper -->
 
-                <!-- Swiper-instalaciones pagination -->
                 <div class="swiper-pagination swiper-instalaciones__pagination"></div>
+
+                <div class="swiper-button-prev swiper-instalaciones__button-prev"></div>
+                <div class="swiper-button-next swiper-instalaciones__button-next"></div>
+
             </div> <!-- .swiper .swiper-instalaciones -->
         </section> <!-- .instalaciones -->
 
@@ -485,15 +504,22 @@
                     </div>
                 </li> <!-- .accordion-item -->
             </ul> <!-- .accordion -->
-        </section>
+
+        </section> <!-- .preguntas-frecuentes -->
 
         <div class="llamado-contacto-contenedor">
             <div class="llamado-accion">
                 <div class="contenedor llamado-accion__contenido">
                     <p class="llamado-accion__texto">
                         Tu camino hacia el éxito comienza aquí.
-                        <span>¡Contáctanos Ahora Mismo!</span>
                     </p>
+                    <a 
+                        href="https://wa.me/+573228832251" 
+                        class="llamado-accion__enlace-whatsapp"
+                        target="_blank"
+                    >
+                        ¡Contáctanos Ahora Mismo!
+                    </a>
                 </div>
             </div>
 
@@ -505,33 +531,36 @@
                             <i class="fa-solid fa-phone"></i>
                         </div>
 
-                        <p>
-                            +57 322 883 2251
-                        </p>
+                        <p class="datos-contacto__dato">+57 322 883 2251</p>
                     </li>
 
                     <li class="datos-contacto__item">
-                        <div class="datos-contacto__contenedor-icono">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </div>
+                        <a 
+                            href="https://wa.me/+573228832251" 
+                            class="datos-contacto__enlace"
+                            target="_blank"
+                        >
+                            <div class="datos-contacto__contenedor-icono">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
 
-                        <p>
-                            +57 322 883 2251
-                        </p>
+                            <p class="datos-contacto__dato">+57 322 883 2251</p>
+                        </a>
                     </li>
             
                     <li class="datos-contacto__item">
-                        <div class="datos-contacto__contenedor-icono">
-                            <i class="fa-solid fa-envelope"></i>
-                        </div>
-
-                        <p>
-                            <a href="mailto:anhellstudios1@gmail.com" class="enlace-email">anhellstudios1@gmail.com</a>
-                        </p>
+                        <a href="mailto:anhellstudios1@gmail.com" class="datos-contacto__enlace">
+                            <div class="datos-contacto__contenedor-icono">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+    
+                            <p class="datos-contacto__dato">anhellstudios1@gmail.com</p>  
+                        </a>
                     </li>
-                </ul>
-            </section>
-        </div>
+                </ul> <!-- .datos-contacto__lista-->
+            </section> <!-- .contenedor .datos-contacto -->
+
+        </div> <!-- .llamado-contacto-contenedor-->
     </main>
 
     <footer>
