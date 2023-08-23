@@ -1,7 +1,3 @@
 node_modules
 src
-src/*
-src/js/app.js
-src/js/currentYear.js
-src/js/mobileMenu.js
 gulpfile.js
