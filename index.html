@@ -271,9 +271,15 @@
         <section id="instalaciones" class="instalaciones contenedor mtop-3 ptop-3">
             <h2 class="instalaciones__titulo">Descubre Nuestro Espacio Creativo</h2>
 
-            <!-- Cambiar los <img> por <picture> y agregar loading="lazy" cuando estén las imagenes finales -->
+            <video controls muted class="instalaciones__video">
+                <source src="build/videos/instalaciones.mp4" type="video/mp4">
+                <source src="build/videos/instalaciones.ogg" type="video/ogg">
+                <source src="build/videos/instalaciones.webm" type="video/webm">
+             </video>
 
-            <div class="swiper swiper-instalaciones">
+            <!-- Cambiar los <img> por <picture> y agregar loading="lazy" cuando estén las imagenes finales en caso de que se vuelvan a poner imagenes -->
+
+            <!-- <div class="swiper swiper-instalaciones">
                 <ul class="swiper-wrapper swiper-instalaciones__wrapper">
                     <li class="swiper-slide swiper-instalaciones__slide">
                         <img src="build/img/instalaciones/espacio-1.jpg"
@@ -349,14 +355,14 @@
                         <img src="build/img/instalaciones/espacio-15.jpg"
                             alt="Imagen ilustrativa del espacio de trabajo de anhell studios">
                     </li>
-                </ul> <!-- .swiper-wrapper .swiper-instalaciones__wrapper -->
+                </ul> .swiper-wrapper .swiper-instalaciones__wrapper -->
 
-                <div class="swiper-pagination swiper-instalaciones__pagination"></div>
+                <!-- <div class="swiper-pagination swiper-instalaciones__pagination"></div>
 
                 <div class="swiper-button-prev swiper-instalaciones__button-prev"></div>
                 <div class="swiper-button-next swiper-instalaciones__button-next"></div>
 
-            </div> <!-- .swiper .swiper-instalaciones -->
+            </div> .swiper .swiper-instalaciones -->
         </section> <!-- .instalaciones -->
 
 
